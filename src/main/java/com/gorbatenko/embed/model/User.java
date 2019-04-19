@@ -26,10 +26,6 @@ public class User {
     @Embedded
     private Address address;
 
-    public User (String name) {
-        this.name = name;
-    }
-
     public User (String name, List<Phone> phones, Address address) {
         this.name = name;
         this.address = address;

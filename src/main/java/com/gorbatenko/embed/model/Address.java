@@ -12,10 +12,12 @@ import javax.persistence.Embeddable;
 @Data
 @Embeddable
 public class Address {
-    @Column(name="address")
-    private String address;
+    @Column(name="street")
+    private String street;
+
     @Column(name="city")
     private String city;
+
     @Column(name="country")
     private String country;
 }
