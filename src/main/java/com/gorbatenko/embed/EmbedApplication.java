@@ -3,7 +3,6 @@ package com.gorbatenko.embed;
 import com.gorbatenko.embed.model.Address;
 import com.gorbatenko.embed.model.Phone;
 import com.gorbatenko.embed.model.User;
-import com.gorbatenko.embed.repository.PhoneRepository;
 import com.gorbatenko.embed.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -18,9 +17,6 @@ public class EmbedApplication implements CommandLineRunner {
 
     @Autowired
     UserRepository userRepository;
-
-    @Autowired
-    PhoneRepository phoneRepository;
 
     public static void main(String[] args) {
         SpringApplication.run(EmbedApplication.class, args);

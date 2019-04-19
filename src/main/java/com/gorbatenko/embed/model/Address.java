@@ -18,5 +18,4 @@ public class Address {
     private String city;
     @Column(name="country")
     private String country;
-
 }
